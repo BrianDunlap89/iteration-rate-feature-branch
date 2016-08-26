@@ -14,7 +14,10 @@ class IterationFactory
   private
 
   def format_iterations
-    IterationSterilizer.new(iterations: unformatted_iterations, project: project, iteration_timelines: iteration_timelines).sterilize
+    IterationSterilizer.new(iterations: unformatted_iterations,
+                            project: project,
+                            iteration_timelines: iteration_timelines
+                            ).sterilize
   end
 
   def unformatted_iterations
